@@ -96,6 +96,7 @@ if (isset($_POST['updatable'])) {
     input[type=text]:focus {
       background-color: lightblue;
     }
+
     textarea[type=text]:focus {
       background-color: lightgreen;
     }
@@ -223,7 +224,7 @@ if (isset($_POST['updatable'])) {
     <footer class="bg-light text-center text-lg-start mt-3">
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         <p>© 2022 Copyright:</p>
-        <a class="text-dark" href=" ">Main page</a>
+        <a class="text-dark" href="home">Main page</a>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

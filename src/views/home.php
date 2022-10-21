@@ -1,9 +1,9 @@
-<?php require_once "bootstrap.php"; 
+<?php require_once "bootstrap.php";
 $address = $entityManager->find('Models\Address', isset($_GET['id']) ? $_GET['id'] : 1);
 
 $url = explode('?', $_SERVER["REQUEST_URI"]);
 
-if(!$address){
+if (!$address) {
     header('Location:' . $url[0]);
 }
 ?>
@@ -52,9 +52,9 @@ if(!$address){
         </div>
     </nav>
     <div class="container d-flex justify-content-center align-items-center">
-        
+
         <?php
-        if (!isset($_GET['id'])){
+        if (!isset($_GET['id'])) {
             echo '<img height="450px" src="src/images/welcome.png" alt="welcome">';
         }
         if (isset($_GET['id'])) {
@@ -74,7 +74,7 @@ if(!$address){
     <footer class="bg-light text-center text-lg-start">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             <p>© 2022 Copyright:</p>
-            <a class="text-dark" href=" ">Main page</a>
+            <a class="text-dark" href="home">Main page</a>
         </div>
     </footer>
 </body>
