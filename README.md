@@ -34,3 +34,6 @@
 
 - Run XAMPP. Start Apache and MySQL;
 - Open browser and type `localhost/SprintAIDZ/`.
+
+- Admin login: Mantas;
+- Admin password: 1234;
