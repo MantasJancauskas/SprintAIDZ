@@ -1,0 +1,21 @@
+{
+    "name": "dr3ik/sprint-aidz",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Models\\": "./src/models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MantasJancauskas",
+            "email": "mantas.jancauskas1@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.13",
+        "symfony/cache": "^6.1",
+        "doctrine/annotations": "^1.13"
+    }
+}
