@@ -37,15 +37,14 @@ if (isset($_GET['action']) and $_GET['action'] == 'logout') {
 
 
 // Add new address
-if (isset($_GET['address'])) {
-  if (empty($_GET['address'])) {
+if (isset($_POST['address'])) {
+  if (empty($_POST['address'])) {
     $_SESSION['message'] = 'Empty address';
     $_SESSION['message_type'] = 'danger';
   } else {
-    // unset($_SESSION['message']);
     $product = new Address();
-    $product->setAddressValue($_GET['address']);
-    $product->setUser($_GET['user']);
+    $product->setAddressValue($_POST['address']);
+    $product->setUser($_POST['user']);
     $entityManager->persist($product);
     $entityManager->flush();
     $_SESSION['message'] = 'Created';
@@ -213,11 +212,11 @@ if (isset($_POST['updatable'])) {
             <?php unset($_SESSION['message']); ?>
           </div> <?php } ?>
       </div>
-      <form class="form-control" action="" method="GET">
+      <form class="form-control" action="" method="POST">
         <label for="address">Address name: </label><br>
-        <input class="form-control" type="text" name="address" value="oh-no"><br>
-        <input class="form-control" type="text" name="user" value="staska"><br>
-        <input type="submit" class="btn btn-primary" value="Submit">
+        <input class="form-control" type="text" name="address" value="Petro-dienos"><br>
+        <textarea class="form-control" type="text" name="user" placeholder="Petras" value=""></textarea><br>
+        <input class="btn btn-primary" type="submit" value="Submit">
       </form>
     <?php } ?>
     </div>

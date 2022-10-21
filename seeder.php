@@ -1,12 +1,12 @@
 <?php
 
-include_once "bootstrap.php";
+// include_once "bootstrap.php";
 
-$addressValue = $argv[1];
+// $addressValue = $argv[1];
 
-$address = new Models\Address();
-$address->setAddressValue($addressValue);
-$entityManager->persist($address);
-$entityManager->flush();
+// $address = new Models\Address();
+// $address->setAddressValue($addressValue);
+// $entityManager->persist($address);
+// $entityManager->flush();
 
-echo "Created Product with ID " . $address->getId() . "\n";
+// echo "Created Product with ID " . $address->getId() . "\n";

@@ -52,7 +52,11 @@ if(!$address){
         </div>
     </nav>
     <div class="container d-flex justify-content-center align-items-center">
+        
         <?php
+        if (!isset($_GET['id'])){
+            echo '<img height="450px" src="src/images/welcome.png" alt="welcome">';
+        }
         if (isset($_GET['id'])) {
             $add = $entityManager->getRepository('Models\Address')->findBy(array('id' => $_GET['id']));
             echo '<div>';

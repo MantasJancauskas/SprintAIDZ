@@ -14,12 +14,10 @@ if (isset($_GET['id'])) {
 } else {
     $idz = NULL;
 }
-if (isset($_GET['address'])) {
+if (isset($_GET['address'])){
     $ids = $_GET['address'];
-    $id = $_GET['user'];
 } else {
     $ids = NULL;
-    $id = NULL;
 }
 if (isset($_GET['updatable'])) {
     $upd = $_GET['updatable'];
@@ -53,7 +51,7 @@ switch ($request) {
     case $prefix . '/admin?delete=' . $del:
         require __DIR__ . '/src/views/tunneler.php';
         break;
-    case $prefix . '/admin?address=' . $ids . '&user=' . $id:
+    case $prefix . '/admin?address=' . $ids . '&user=':
         require __DIR__ . '/src/views/tunneler.php';
         break;
     case $prefix . '/?id=' . $idz:
