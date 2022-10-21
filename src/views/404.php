@@ -8,7 +8,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>404</title>
     <style>
         .container {
             min-height: 95vh;
@@ -36,11 +36,11 @@
         </div>
     </nav>
     <div class="container">
-        <img height="800px" src="src\images\cat-404.jpg">
+        <img height="800px" src="src\images\cat-404.jpg" alt="404 Cat">
     </div>
     <footer class="bg-light text-center text-lg-start">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright:
+            <p>© 2022 Copyright:</p>
             <a class="text-dark" href="home">Main page</a>
         </div>
     </footer>
