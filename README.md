@@ -1,6 +1,6 @@
 # Content management system - CMS
 
-- project was made using PHP and SQL;
+- Project was made using PHP and SQL;
 - (installation process explained below);
 
 # About
@@ -11,26 +11,26 @@
 
 ## Tasks to be done:
 
-- to create a database scheme;
-- to create a PHP app which will print data from database into the browser;
-- ability to DELETE pages and content;
-- ability to ADD pages and content;
-- ability to UPDATE tables;
+- To create a database scheme;
+- To create a PHP app which will print data from database into the browser;
+- Ability to DELETE pages and content;
+- Ability to ADD pages and content;
+- Ability to UPDATE tables;
 
 # Installation process
 
 ## To install this project you will need: Git bash, XAMPP, and MySQL Workbench.
 
-- create an empty fresh folder on e.g. Desktop;
-- open that folder e.g. via VSCode editor;
-- clone my project using this link: `git clone https://github.com/MantasJancauskas/SprintAIDZ`;
-- place the folder you cloned before into `xampp/htdocs/` directory;
-- open MySQL Workbench and create database named `mydb`;
-- in the tool bar inside Workbench choose `Server -> Data import`;
-- then in data import tab you need to do these steps:
+- Create an empty fresh folder on e.g. Desktop;
+- Open that folder e.g. via VSCode editor or your terminam CMD;
+- Clone my project using this link: `git clone https://github.com/MantasJancauskas/SprintAIDZ`;
+- Place the folder you cloned before into `xampp/htdocs/` directory;
+- Open MySQL Workbench and create database named `mydb`;
+- In the tool bar inside Workbench choose `Server -> Data import`;
+- Then in data import tab you need to do these steps:
 
 * Import from Self-Containet File (choose:'your path'/mydb.sql) -> Default target schema (new - "mydb") -> Start Import;
-* relaod schema for tables to appear;
+* Reload schema for tables to appear;
 
-- run XAMPP. Start Apache and MySQL;
-- opne browser and type `localhost/SprintAIDZ/`.
+- Run XAMPP. Start Apache and MySQL;
+- Open browser and type `localhost/SprintAIDZ/`.
